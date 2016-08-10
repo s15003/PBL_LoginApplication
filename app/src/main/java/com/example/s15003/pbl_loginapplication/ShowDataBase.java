@@ -26,8 +26,8 @@ public class ShowDataBase extends Activity{
         boolean mov = c.moveToFirst();
         while (mov) {
             TextView textView = new TextView(this);
-            textView.setText(String.format("ID:%s  Pass:%d", c.getString(0),
-                    c.getInt(0)));
+            textView.setText(String.format("Id:%s  Pass:%s", c.getString(0),
+                    c.getString(1)));
             mov = c.moveToNext();
             layout.addView(textView);
         }

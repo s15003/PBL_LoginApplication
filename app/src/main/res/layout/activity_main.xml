@@ -43,6 +43,7 @@
         android:layout_alignParentEnd="true"
         android:nestedScrollingEnabled="false"
         android:inputType="text"
+        android:ems="10"
         android:digits="0123456789abcdefghijklmnopqrstuvwxyz" />
 
 
@@ -77,6 +78,13 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Del(tst)"
+        android:id="@+id/button3"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/button2" />
 
 
 </RelativeLayout>

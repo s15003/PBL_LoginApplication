@@ -1,8 +1,6 @@
 package com.example.s15003.pbl_loginapplication;
 
 
-
-import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
@@ -44,6 +42,25 @@ public class MainActivity extends AppCompatActivity {
                 long id = db.insert("person", Id, insertValues);
 
 
+
+                // ボタンクリック時に実行される
+                // 引数のViewはクリックされたボタンのViewオブジェクトでｓ
+                /*final EditText editText = (EditText) findViewById(R.id.editText);
+                final EditText editText2 = (EditText) findViewById(R.id.editText2);
+                CharSequence message = editText.getText();
+                CharSequence message2 = editText2.getText();
+
+                if (TextUtils.isEmpty(message) || TextUtils.isEmpty(message2)) {
+
+                }
+                // 未入力の場合の処理でｓ！
+                message = "未入力の部分があります";
+                Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
+*/
+
+
+
+
             }
         });
 
@@ -59,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+
 
 
         //AllDelete(本来ならこのページにいらないがデータがいっぱいいっぱいになるのがいやなので作った)
